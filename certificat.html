@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Certificat Expert Architecture Logicielle - Toure Academy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .cert-border { 
+            border: 20px solid #0f172a; 
+            outline: 2px solid #e2e8f0; 
+            outline-offset: -12px; 
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 7rem;
+            font-weight: 900;
+            color: rgba(226, 232, 240, 0.3);
+            pointer-events: none;
+            z-index: 0;
+            white-space: nowrap;
+        }
+        .tech-logo { filter: grayscale(100%); opacity: 0.6; transition: 0.3s; }
+        .tech-logo:hover { filter: grayscale(0%); opacity: 1; }
+    </style>
+</head>
+<body class="bg-slate-200 flex items-center justify-center min-h-screen p-6">
+
+    <div class="bg-white w-full max-w-5xl p-14 cert-border relative shadow-2xl overflow-hidden">
+        
+        <div class="watermark">OFFICIAL CERTIFICATION</div>
+
+        <div class="relative z-10 flex justify-between items-start mb-10">
+            <div class="text-left">
+                <h2 class="text-slate-900 font-black tracking-tighter text-2xl italic">TECH INTER ACADEMY</h2>
+                <p class="text-[9px] text-slate-500 tracking-[0.4em] uppercase font-bold">Software Architecture & Cloud Excellence</p>
+            </div>
+            <div class="text-right flex flex-col items-end">
+                <span class="bg-slate-900 text-white px-4 py-1 text-[10px] font-bold tracking-widest uppercase">Certificat N° ARCH-2026-001</span>
+                <p class="text-[9px] text-slate-400 mt-1 uppercase">Délivré à Angre-Deuxplateau(Abidjan), Côte d'Ivoire</p>
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center mb-10">
+            <p class="text-slate-400 uppercase tracking-[0.5em] text-[10px] font-extrabold mb-6">Le présent titre d'expertise est décerné à</p>
+            <h1 class="serif text-6xl text-slate-800 mb-6">[TOURE ABOU]</h1>
+            
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                Pour la réussite du programme intensif d'expertise en <br>
+                <span class="font-black text-slate-900 border-b-4 border-slate-900 pb-1 uppercase tracking-tight">Architecture Logicielle & Ingénierie Cloud</span>
+            </p>
+
+            <div class="mt-4 p-6 bg-slate-50 border-y border-slate-100 text-left mx-auto max-w-3xl">
+                <p class="text-[10px] font-black text-slate-900 uppercase mb-3 tracking-widest">Compétences Techniques Validées :</p>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-[10px] text-slate-600 uppercase">
+                    <div class="flex items-center">
+                        <span class="w-2 h-2 bg-slate-900 mr-2"></span> Maîtrise Fullstack : Python, Django & PostgreSQL
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-2 h-2 bg-slate-900 mr-2"></span> Design System : Tailwind CSS v4 & UI/UX Moderne
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-2 h-2 bg-slate-900 mr-2"></span> Architecture Cloud : Déploiement & Gestion AWS
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-2 h-2 bg-slate-900 mr-2"></span> IA & Automatisation : Intégration n8n et APIs
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-8 mb-12 relative z-10">
+            <span class="font-bold text-slate-300 text-[10px] uppercase self-center mr-4">Technologies :</span>
+            <div class="flex gap-6 opacity-30 grayscale italic font-black text-slate-400 text-sm items-center">
+                <span>PYTHON</span>
+                <span>DJANGO</span>
+                <span>AWS</span>
+                <span>TAILWIND</span>
+                <span>DOCKER</span>
+            </div>
+        </div>
+
+        <div class="relative z-10 flex justify-between items-end pt-6 border-t border-slate-100">
+            
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-20 bg-white border-2 border-slate-900 p-1 mb-2">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.linkedin.com/in/abou-toure-765b55394/verify/ARCH-2026-001" alt="QR Verify">
+                </div>
+                <span class="text-[8px] font-bold text-slate-500 tracking-tighter font-mono">SCANNER POUR VÉRIFIER</span>
+                <span class="text-[7px] text-slate-400 font-bold uppercase">Original Certifié Numériquement</span>
+            </div>
+
+            <div class="text-center">
+                <div class="mb-1">
+                    <span class="serif italic text-4xl text-slate-900">Toure Abou</span>
+                </div>
+                <div class="h-0.5 w-44 bg-slate-900 mx-auto mb-2"></div>
+                <p class="text-[10px] font-black uppercase text-slate-900 tracking-widest">Directeur de l'Ingénierie</p>
+                <p class="text-[9px] text-slate-400 font-bold uppercase">Software Architect Expert</p>
+            </div>
+
+            <div class="relative w-28 h-28">
+                <svg viewBox="0 0 100 100" class="w-full h-full animate-[spin_10s_linear_infinite]">
+                    <path id="circlePath" d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" fill="transparent"/>
+                    <text class="text-[8px] uppercase font-bold fill-slate-900">
+                        <textPath xlink:href="#circlePath"> • TECH INTER ACADEMY • EXCELLENCE TECHNIQUE • SESSION 2026 •</textPath>
+                    </text>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center shadow-2xl border-4 border-white">
+                        <span class="text-white font-black text-2xl">TA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <p class="text-[9px] text-slate-300 uppercase font-bold tracking-[0.3em]">
+                Ce certificat atteste des compétences techniques. Le code source du projet final est archivé sous l'ID 176935149830.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
